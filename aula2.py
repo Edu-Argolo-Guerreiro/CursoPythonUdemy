@@ -21,6 +21,40 @@ idade = 2023 - int(ano_nascimento)
 idade = str(idade)
 print('Você tem ' + idade + ' anos.' )
 
+#Aula 3
+velocidade = 100
+texto = f'Sua velocidade está em {velocidade} km/h'
+
+if velocidade > 110:
+    print(texto)
+    print('reduza a velocidade')
+
+elif velocidade < 60:
+    print(texto)
+    print('aumente sua velocidade para 70KM/H')
+
+else:
+    print(texto)
+    print('velocidade permitida')
+
+#aula 4
+valor = 20
+
+if 21 <= valor < 40:
+    print('valor permitido')
+
+else:
+    print ('valor negado')
+
+#aula 5 ----------------------------------------
+for numero in range(1, 21, 3):
+    print(numero)
+
+palavra = 'Homem'
+
+for letras in palavra:
+    print(f'{letras} é uma letra que pertence a {palavra}')
+
 #aula 6 ----------------------------------------
 compra_confirmada = False
 detalhe_compra = 'O pagamento da compra foi confirmado'
@@ -170,7 +204,7 @@ print(letras)
 print(numeros_i)
 print(numeros_f)
 
-#aula 20
+#aula 20 ----------------------------------------
 
 list1 = [10, 20, 30, 40, 50]
 list2 = [10, 30, 50, 70, 90]
@@ -182,3 +216,40 @@ print(num1 | num2) #Union
 print(num1 & num2) #And
 print(num1 - num2) #Diferença
 print(num1 ^ num2) #Diferença simétrica
+
+#aula 21 ----------------------------------------
+
+#dicionario
+aluno = {'nome': 'Edu', 'idade': 23, 'curso': 'Sistemas de Informação', 'Aprovação': True}
+print(aluno['nome'])
+
+aluno.update({'nome': 'Laís', 'Aprovação': False})
+print(aluno)
+print(aluno.get('endereço', 'Não foi informado este dado'))
+del aluno ['idade']
+print(aluno)
+
+#aula 22 ----------------------------------------
+
+#dicionario
+aluno = {'nome': 'Edu', 'idade': 23, 'curso': 'Sistemas de Informação', 'Aprovação': True}
+
+for keys, values in aluno.items():
+    print(keys, values)
+
+#aula 23 ----------------------------------------
+
+'''def somar(x):
+   return x + 10
+'''
+somar10 = lambda x,y: x + y + 10
+print(somar10(2, 4))
+
+
+#aula 24 ----------------------------------------
+
+def somar(x):
+    func2 = lambda x: x + 10
+    return func2(x) * 4
+
+print(somar(2))
