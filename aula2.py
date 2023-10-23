@@ -21,15 +21,6 @@ idade = 2023 - int(ano_nascimento)
 idade = str(idade)
 print('Você tem ' + idade + ' anos.' )
 
-#aula 5 ----------------------------------------
-for numero in range(1, 21, 3):
-    print(numero)
-
-palavra = 'Homem'
-
-for letras in palavra:
-    print(f'{letras} é uma letra que pertence a {palavra}')
-
 #aula 6 ----------------------------------------
 compra_confirmada = False
 detalhe_compra = 'O pagamento da compra foi confirmado'
@@ -152,3 +143,42 @@ def agencia(**carro):
 print(agencia(marca = 'BMW', cor = 'azul', placa = '162123', motor = 2.0))
 print(agencia(marca = 'BMW', cor = 'preto', motor = 2.0))
 print(agencia(marca = 'GOL', cor = 'azul', placa = '162123'))
+
+#aula 17 ----------------------------------------
+import math
+
+print(math.factorial(4))
+print(math.ceil(3.7))
+print(math.floor(3.7))
+
+#aula 18 ----------------------------------------
+
+frutas_usuario = input('Digite suas frutas favoritas: ')
+
+frutas_lista = frutas_usuario.split(', ')
+print(frutas_lista)
+
+from array import array
+
+#aula 19 ----------------------------------------
+
+letras = array('u', ['a', 'b', 'c', 'd'])
+numeros_i = array('i', [12, 10, 8, 6, 4, 2])
+numeros_f = array('f', [1.2, 1.5, 1.7, 1.9, 2.1, 2.3])
+
+print(letras)
+print(numeros_i)
+print(numeros_f)
+
+#aula 20
+
+list1 = [10, 20, 30, 40, 50]
+list2 = [10, 30, 50, 70, 90]
+
+num1 = set(list1)
+num2 = set(list2)
+
+print(num1 | num2) #Union
+print(num1 & num2) #And
+print(num1 - num2) #Diferença
+print(num1 ^ num2) #Diferença simétrica
