@@ -253,3 +253,37 @@ def somar(x):
     return func2(x) * 4
 
 print(somar(2))
+
+#aula 25 ----------------------------------------
+
+lista1 = [1, 2, 3, 4]
+
+def mult(x):
+   return x * 2
+
+lista2 = map(mult, lista1)
+print(list(lista2))
+
+#aula 26 ----------------------------------------
+
+valores = [10, 15, 20, 25, 30, 35]
+
+print(list(filter(lambda x: x >=20, valores)))
+
+#aula 27 ----------------------------------------
+
+setup = ['python', '-m', 'pip', 'install', '-r', 'requirements.txt']
+
+setup2 = [iten for iten in setup if 'i' in iten]
+print(setup2)
+
+#aula 28 ----------------------------------------
+from sys import getsizeof
+
+valores = [x * 10 for x in range(10)]
+print (getsizeof(valores))
+
+print ('======')
+
+valores = (x * 10 for x in range (10))
+print(getsizeof(valores))

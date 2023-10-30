@@ -1,7 +1,10 @@
-#aula 24
+#aula 28 ----------------------------------------
+from sys import getsizeof
 
-def somar(x):
-    func2 = lambda x: x + 10
-    return func2(x) * 4
+valores = [x * 10 for x in range(10)]
+print (getsizeof(valores))
 
-print(somar(2))
+print ('======')
+
+valores = (x * 10 for x in range (10))
+print(getsizeof(valores))
