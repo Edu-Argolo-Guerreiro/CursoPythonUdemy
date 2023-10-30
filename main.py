@@ -1,10 +1,8 @@
-#aula 28 ----------------------------------------
-from sys import getsizeof
+#aula 29 ----------------------------------------
 
-valores = [x * 10 for x in range(10)]
-print (getsizeof(valores))
-
-print ('======')
-
-valores = (x * 10 for x in range (10))
-print(getsizeof(valores))
+try:
+    letras = [1, 2, 3]
+    print(letras[3])
+except IndexError:
+    print('Não existe esse número')
+    
