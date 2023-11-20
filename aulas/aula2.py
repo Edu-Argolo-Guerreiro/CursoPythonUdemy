@@ -360,3 +360,74 @@ print(usuario2.sobrenome)
 print(usuario3.curso)
 print(Funcionarios.nome_completo(usuario3))
 print(Funcionarios.idade_funcionario(usuario3))
+
+# Exercício  ----------------------------------------
+
+ponto = int(input(f'Quantos graus está a sua carne? '))
+
+if ponto < 48:
+    print('Cozinhar por mais alguns minutos')
+elif ponto in range (48, 53):
+    print('Selada')
+elif ponto in range (54, 59):
+    print('Ao ponto para mal')
+elif ponto in range (60, 64):
+    print('Ao ponto')
+elif ponto in range (65, 70):
+    print('Ao ponto para bem')
+else:
+    print('Bem passada')
+
+# Exercício
+
+rendimento = int(input('Qual o rendimento da lata? '))
+altura = int(input('Qual a altura da parede? '))
+largura = int(input('Qual a largura da parede? '))
+
+def calculo_tinta():
+    area = altura * largura
+    tinta = area / rendimento
+    print(f'Você precisa de {tinta} latas de tinta')
+
+calculo_tinta ()
+
+# Exercício
+
+funcionarios = ['Ana', 'Marcos', 'Alice', 'Pedro', 'Sophia']
+turno_dia = ['Ana', 'Alice', 'Sophia']
+turno_noite = ['Alice', 'Marcos', 'Pedro']
+tem_carro = ['Ana', 'Marcos', 'Sophia']
+
+#lista 1
+lista1 = set(tem_carro).intersection(turno_noite)
+print(lista1)
+#lista 2
+lista2 = set(tem_carro).intersection(turno_dia)
+print(lista2)
+#lista 3
+lista3 = set(funcionarios).difference(tem_carro)
+print(lista3)
+
+# Exercício
+
+altura = float(input('Qual a sua altura em cm? '))
+peso = float(input('Qual é o seu peso em kg: '))
+imc = peso / (altura / 100) ** 2
+imc = round(imc, 2)
+
+if imc < 18.5:
+    print(f'Seu IMC é {imc} = Magreza')
+elif imc > 18.5 and imc < 25:
+    print(f'Seu IMC é {imc} = Normal')
+elif imc > 25 and imc < 30:
+    print(f'Seu IMC é {imc} = Sobrepeso')
+elif imc > 30 and imc < 40:
+    print(f'Seu IMC é {imc} = Obesidade')
+else:
+     print(f'Seu IMC é {imc} = Obesidade Grave')
+
+#Menor que 18,5 Magreza
+#Entre 18,5 e 24,9 normal
+#Entre 25 e 29,9 Sobrepeso
+#Entre 30 e 39,9 Obesidade
+#Maior que 40 Obesidade Grave
