@@ -431,3 +431,26 @@ else:
 #Entre 25 e 29,9 Sobrepeso
 #Entre 30 e 39,9 Obesidade
 #Maior que 40 Obesidade Grave
+
+#desafio
+
+num1 = float(input(f'Digite o primeiro número: '))
+num2 = float(input(f'Digite o segundo número: '))
+
+sum_result = num1 + num2
+subtraction_result = num1 - num2
+multiplication_result = num1 * num2
+division_result = num1 / num2
+exponetion_result = num1 ** num2
+
+print(f'A soma dos números é {sum_result}')
+print(f'A subtração dos números é {subtraction_result}')
+print(f'A multiplicação dos números é {multiplication_result}')
+print(f'A divisão dos números é {division_result}')
+print(f'A exponencia dos números é {exponetion_result}')
+
+#desafio
+
+frutas = ['Maçã', 'Banana', 'Manga', 'Uva']
+print(f'A primeira fruta é: {frutas[0]}')
+print(f'A segunda fruta é: {frutas[-1]}')
